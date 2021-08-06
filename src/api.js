@@ -28,14 +28,24 @@ const Credentials = require('../Perfect/key.json');
 // var appfirebase = firebase.initializeApp();
 const firebaseconfig = {
 
-    apiKey: 'AIzaSyCMQyDcapa0t6rAzqYfoKFXqAaA84NBk6o',
-    authDomain: 'investy-b139a.firebaseapp.com',
-    projectId: 'investy-b139a',
-    storageBucket: 'investy-b139a.appspot.com',
-    messagingSenderId: '727451194943',
-    appId: '1:727451194943:web:ff884b3d80928a9c3b8a8a',
-    measurementId: 'G-ZB3V5QNL7X',
+  apiKey: "AIzaSyDFfxcgj7Nj5kA069XIFtrzh9lSA1dEhz0",
+
+  authDomain: "empire-cart-3e68d.firebaseapp.com",
+
+  databaseURL: "https://empire-cart-3e68d.firebaseio.com",
+
+  projectId: "empire-cart-3e68d",
+
+  storageBucket: "empire-cart-3e68d.appspot.com",
+
+  messagingSenderId: "968861439602",
+
+  appId: "1:968861439602:web:d4a338288f8db30bd4d4eb",
+
+  measurementId: "G-PL2NGWB0Q3"
+
 };
+
 
 firebase.initializeApp(
   {credential: firebase.credential.cert(Credentials),
@@ -67,24 +77,10 @@ router.get('/', cors(), (req, res) => {
   const PAYMENT_AMOUNT = req.body.PAYMENT_AMOUNT;
   console.log('GET_PAYMENT_AMOOOOOOOOOOOUNT=', config.PerfectConfig.PAYMENT_AMOUNT);
   // GET PAYMENT_AMOOOOOOOUNT
-  /*
-  const snapshot =  firestore.collection('Payment').doc('perfectUSD').get();
-  snapshot.then((value) => {
-    console.log('firebase value', value);
-    config.PerfectConfig = value.data();
-    if (value && value.data()) {
-    res.json(config.PerfectConfig);
-    } else {
-      res.json({error: true});
-    }
-  }).catch((e) => {
-    console.log('Err', e);
-    res.send('ERR');
-  });
-  */
+
   var Data = {
-    PAYEE_ACCOUNT: 'U29376327',
-    PAYEE_NAME: 'Green Wallet',
+    PAYEE_ACCOUNT: 'U5871095',
+    PAYEE_NAME: 'Assiame',
     STATUS_URL: 'https://gw-pm.herokuapp.com/status.js',
     PAYMENT_URL: 'https://gw-pm.herokuapp.com/success.js',
     NOPAYMENT_URL: 'https://gw-pm.herokuapp.com/error.js',
@@ -127,8 +123,8 @@ router.post('/', cors(), function(req, res) {
   // ADd PAYMENT_AMOOOOOOOOUNT t fireobase
 
   var Data = {
-    PAYEE_ACCOUNT: 'U29376327',
-    PAYEE_NAME: 'Green Wallet',
+    PAYEE_ACCOUNT: 'U5871095',
+    PAYEE_NAME: 'Assiame',
     STATUS_URL: 'https://gw-pm.herokuapp.com/status.js',
     PAYMENT_URL: 'https://gw-pm.herokuapp.com/success.js',
     NOPAYMENT_URL: 'https://gw-pm.herokuapp.com/error.js',
