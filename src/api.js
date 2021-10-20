@@ -123,7 +123,7 @@ router.post('/', cors(), function(req, res) {
   // ADd PAYMENT_AMOOOOOOOOUNT t fireobase
 
   var Data = {
-    PAYEE_ACCOUNT: 'U5871095',
+    PAYEE_ACCOUNT: 'U30671902',
     PAYEE_NAME: 'Assiame',
     STATUS_URL: 'https://gw-pm.herokuapp.com/status.js',
     PAYMENT_URL: 'https://gw-pm.herokuapp.com/success.js',
