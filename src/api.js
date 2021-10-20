@@ -79,7 +79,7 @@ router.get('/', cors(), (req, res) => {
   // GET PAYMENT_AMOOOOOOOUNT
 
   var Data = {
-    PAYEE_ACCOUNT: 'U5871095',
+    PAYEE_ACCOUNT: 'U30671902',
     PAYEE_NAME: 'Assiame',
     STATUS_URL: 'https://gw-pm.herokuapp.com/status.js',
     PAYMENT_URL: 'https://gw-pm.herokuapp.com/success.js',
